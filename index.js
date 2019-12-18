@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-//
 const expParser = require('mathjs-expression-parser');
+require("dotenv").config();
 
 /* eslint-disable */
 // To keep these formatted nicely
@@ -241,4 +241,4 @@ function splitMessage(str) {
 	return out;
 }
 
-client.login('NjU2NjYyOTQ4MjMxNzc0MjA5.Xfl8FA.6h65jSoFQes09Q6zc08qW1blaC8');
+client.login(process.env.DISCORD_TOKEN);
